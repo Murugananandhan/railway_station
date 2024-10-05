@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Station Capacity Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Railway Station Train Tracker</h1>
+
+        <div id="stationForm">
+            <h2>Add a New Station</h2>
+            <input type="text" id="stationName" placeholder="Station Name">
+            <input type="number" id="stationCapacity" placeholder="Max Capacity">
+            <button onclick="addStation()">Add Station</button>
+        </div>
+
+        <h2>Stations List</h2>
+        <table id="stationTable">
+            <thead>
+                <tr>
+                    <th>Station Name</th>
+                    <th>Current Trains</th>
+                    <th>Max Capacity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="stationBody">
+             
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
